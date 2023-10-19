@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Page 1 */
+
+.page1{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(29, 27, 41);
+}
+
+/* Navbar */
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+nav ul li a:hover{
+    background-color: orange;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+nav .nav-text{
+    color: white;
+    position: absolute;
+    left: 3rem;
+}
+
+
+/* Navbar Icon */
+
+nav .nav-icon i{
+    color: white;
+    position: absolute;
+    right: 2rem;
+    top: 1.1rem;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Page 1 Text */
+
+.page1 h1{
+    color: white;
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 40px;
+}
+
+.page1 p{
+    color: white;
+    text-align: center;
+    line-height: 23px;
+}
+
+.page1-button{
+   display: flex;
+   justify-content: center;
+   margin-top: 3rem;
+}
+
+.page1 button{
+    font-size: 15px;
+    padding: 10px 27px;
+    color: white;
+    border: 1px solid orangered;
+    border-radius: 10px;
+    background-color: rgb(29, 27, 41);
+}
+
+.page1 button:hover{
+    background-color: orangered;
+    cursor: pointer;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+
+/* Page 2 */
+
+.page2{
+    width: 100%;
+    height: 400px;
+    background-color: blue;
+}
+
+.page2-p1{
+    padding: 50px;
+    font-size: 20px;
+    color: rgb(196, 196, 196);
+}
+
+.page2-p1-line{
+    text-decoration: line-through;
+    text-decoration-thickness: 3.9px;
+    text-decoration-color: orange;
+}
+
+.page2 .page2-h2{
+    margin-left: 50px;
+    margin-top: -2rem;
+}
+
+
+/* Page 2 Div 1 */
+
+.page2-div1-p1{
+    margin-top: 2.5rem;
+    margin-left: 50px;
+    font-size: 18px;
+    color: rgb(199, 198, 198);
+}
+
+.page2-div1 ul{
+    margin-top: 40px;
+    margin-left: 50px;
+    color: rgb(199, 198, 198);
+}
+
+.page2 .page2-div1 ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+.page2 .page2-div1 i{
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px){
+    nav ul{
+        display: none;
+    }
+    
+    nav{
+        height: 40px;
+    }
+
+    nav .nav-icon i{
+        display: block;
+    }
+}
