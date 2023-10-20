@@ -15,7 +15,6 @@
 /* Navbar */
 
 nav{
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -36,11 +35,11 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     padding: 8px;
+    border-radius: 10px;
 }
 
 nav ul li a:hover{
     background-color: orange;
-    border-radius: 10px;
     transition: .3s;
 }
 
@@ -107,19 +106,19 @@ nav .nav-icon i{
 .page2{
     width: 100%;
     height: 400px;
-    background-color: blue;
+    background-color: white;
 }
 
 .page2-p1{
     padding: 50px;
     font-size: 20px;
-    color: rgb(196, 196, 196);
+    color: rgb(175, 175, 175);
 }
 
 .page2-p1-line{
     text-decoration: line-through;
-    text-decoration-thickness: 3.9px;
     text-decoration-color: orange;
+    color: white;
 }
 
 .page2 .page2-h2{
@@ -128,24 +127,31 @@ nav .nav-icon i{
 }
 
 
+/* Page 2 Divs */
+
+.page2  .page2-divs{
+    display: flex;
+}
+
 /* Page 2 Div 1 */
 
 .page2-div1-p1{
     margin-top: 2.5rem;
     margin-left: 50px;
     font-size: 18px;
-    color: rgb(199, 198, 198);
+    color: rgb(29, 29, 29);
 }
 
 .page2-div1 ul{
     margin-top: 40px;
     margin-left: 50px;
-    color: rgb(199, 198, 198);
+    color: rgb(29, 29, 29);
 }
 
 .page2 .page2-div1 ul li{
     list-style: none;
     padding: 5px;
+    font-size: 17px
 }
 
 .page2 .page2-div1 i{
@@ -153,6 +159,146 @@ nav .nav-icon i{
 }
 
 
+/* Page 2 Div 2 */
+
+.page2 .page2-div2-p1{
+    color: rgb(29, 29, 29);
+    margin-left: 40px;
+    font-size: 18px;
+    margin-top: 37px;
+}
+
+.page2 .page2-div2 button{
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 15px;
+    padding: 10px 25px;
+    border: 2.2px solid orangered;
+    color: orangered;
+    border-radius: 10px;
+}
+
+.page2 .page2-div2 button:hover{
+    background-color: orangered;
+    color: white;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+
+/* Page 3 */
+
+.page3{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+
+/* Page 3 Boxs */
+
+.page3-boxs{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.page3 .page3-box1, .page3-box2, .page3-box3, .page3-box4{
+    height: 110px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.page3 .page3-box1:hover, .page3-box2:hover, .page3-box3:hover, .page3-box4:hover{
+    border: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+
+/* Page 3 Box 1 */
+
+.page3 .page3-box1{
+    border: 1px solid orangered;
+    background-color: orangered;
+}
+
+.page3 .page3-box1 h3{
+    margin-top: 1.7rem;
+    margin-left: 90px;
+    color: white;
+}
+
+.page3 .page3-box1 i{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+
+/* Page 3 Box 2 */
+
+.page3 .page3-box2 h3{
+    margin-top: 1.7rem;
+    margin-left: 110px;
+}
+
+.page3 .page3-box2 i{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.page3 .page3-box2:hover{
+    color: orangered;
+    transition: .3s;
+}
+
+
+
+/* Page 3 Box 3 */
+
+.page3 .page3-box3 h3{
+    margin-top: 1.7rem;
+    margin-left: 110px;
+}
+
+.page3 .page3-box3 i{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.page3 .page3-box3:hover{
+    color: orangered;
+    transition: .3s;
+}
+
+
+
+/* Page 3 Box 4 */
+
+.page3 .page3-box4 h3{
+    margin-top: 1.7rem;
+    margin-left: 110px;
+}
+
+.page3 .page3-box4 i{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.page3 .page3-box4:hover{
+    color: orangered;
+    transition: .3s;
+}
+
+
+
+
+/* Page 4 */
 
 
 
@@ -184,5 +330,17 @@ nav .nav-icon i{
 
     nav .nav-icon i{
         display: block;
+    }
+
+    .page2-divs{
+        flex-direction: column;
+    }
+
+    .page3-box1 h3, .page3-box2 h3, .page3-box3 h3, .page3-box4 h3{
+        display: none;
+    }
+
+    .page3-box1 i, .page3-box2 i, .page3-box3 i, .page3-box4 i{
+        position: relative;
     }
 }
